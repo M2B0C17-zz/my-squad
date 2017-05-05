@@ -17,7 +17,7 @@ Ejercicio práctico 2 - Objetos - Squad
 ## HTML:
 1º Se crearon en el HTML, etiquetas div, para agrupar el contenido de mis compañeras de Squad dentro de div.
 
-[ <div id='listita'></div> ]
+                                                [ <div id='listita'></div> ]
 
 
 2º Conectamos ambos archivos (.html y .js) con la etiqueta script.
@@ -48,4 +48,4 @@ Ejercicio práctico 2 - Objetos - Squad
                                                [ impre.innerHTML = resComprimido; ]
 
 
-Vista Previa del Ejercicio --> 
+Vista Previa del Ejercicio --> https://m2b0c17.github.io/my-squad/
