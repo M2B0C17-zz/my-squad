@@ -5,6 +5,8 @@ Ejercicio práctico 2 - Objetos - Squad
 **Para el diseño ->** http://librosweb.es/libro/javascript/capitulo_11/ejercicio_6.html
 **Para el ejercicio -->** https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Trabajando_con_objectos
                     -->** https://developer.mozilla.org/es/docs/Web/HTML/Elemento/div
+
+
 **Entre otros**
 
 
