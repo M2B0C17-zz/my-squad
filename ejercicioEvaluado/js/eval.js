@@ -5,12 +5,12 @@ function MiembroSquad(nombre,edad,hobbie,imagen){
     this.imagen = imagen;
 
 }
-var bere = new MiembroSquad('Berenisse Rios','28', 'Yoga');
-var su = new MiembroSquad('Susana Arce','28', 'Dar golpesitos con cariño');
-var dani = new MiembroSquad('Daniela Medina','20', 'Ir al kioskito');
-var rata = new MiembroSquad('Andrea Ratika','24', 'Dibujar');
+var bere = new MiembroSquad('Berenisse Rios','28', 'Yoga','bere.jpg');
+var su = new MiembroSquad('Susana Arce','28', 'Dar golpesitos con cariño', 'susa.jpg');
+var dani = new MiembroSquad('Daniela Medina','20', 'Ir al kioskito', 'dani.jpg');
+var rata = new MiembroSquad('Andrea Ratika','24', 'Dibujar', 'rata.jpg');
 var nico = new MiembroSquad('Nicole Aliste','32', 'Comida China');
-var clau = new MiembroSquad('Claudia Rivera','33', 'Patinar');
+var clau = new MiembroSquad('Claudia Rivera','33', 'Patinar', 'clau.png');
 var fran = new MiembroSquad('Francisca Ruiz-Tagle','35', 'Manualidades');
 
 /*
@@ -26,7 +26,7 @@ var impre2 = document.getElementById('list');
 var coment = [];
 
 var impre = objeto.forEach(function(elemento){
-    var elementosSquad =  "<br>Nombre: " + elemento.nombre + "<br>" + "Edad: " + elemento.edad + "<br>" + "Hobbie: " + elemento.hobbie + "<br><br>" + "<textarea name='textarea' rows='9' cols='60'>Comenta AQUI!</textarea>" + ' <input id="campo7" name="enviar" type="submit" value="Enviar"/>';
+    var elementosSquad =  " <img width='200' src= 'Imagen/" + elemento.imagen + "'/>" + "<br>Nombre: " + elemento.nombre + "<br>" + "Edad: " + elemento.edad +  "<br>" + "Hobbie: " + elemento.hobbie + "<br>" + "<br>" + "<textarea name='textarea' rows='9' cols='60'>Comenta AQUI!</textarea>" + ' <input id="campo7" name="enviar" type="submit" value="Envia tu comentario"/>';
     impre2.innerHTML += elementosSquad;
     coment.push(elementosSquad);
 
