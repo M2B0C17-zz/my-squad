@@ -1,22 +1,20 @@
-function MiembroSquad(nombre,edad,hobbie,imagen){
+function MiembroSquad(nombre,edad,hobbie,imagen,id){
     this.nombre = nombre;
     this.edad = edad;
     this.hobbie = hobbie;
     this.imagen = imagen;
-
+    this.id = id;
 }
-var bere = new MiembroSquad('Berenisse Rios','28', 'Yoga','bere.jpg');
-var su = new MiembroSquad('Susana Arce','28', 'Dar golpesitos con cariño','susa.jpg');
-var dani = new MiembroSquad('Daniela Medina','20', 'Ir al kioskito','dani.jpg');
-var rata = new MiembroSquad('Andrea Ratika','24', 'Dibujar','ratita.jpg');
-var nico = new MiembroSquad('Nicole Aliste','32', 'Comida China','nicole.jpg');
-var clau = new MiembroSquad('Claudia Rivera','33', 'Patinar', 'clau.png');
-var fran = new MiembroSquad('Francisca Ruiz-Tagle','35', 'Manualidades', 'fran.png');
 
-/*
-// Enlace es el corazon de like
- // se coloca += para que no sobreescriba arriba
-*/
+var bere = new MiembroSquad('Berenisse Rios','28', 'Yoga','bere.jpg',1);
+var su = new MiembroSquad('Susana Arce','28', 'Dar golpesitos con cariño','susa.jpg',2);
+var dani = new MiembroSquad('Daniela Medina','20', 'Ir al kioskito','dani.jpg',3);
+var rata = new MiembroSquad('Andrea Ratika','24', 'Dibujar','ratita.jpg',4);
+var nico = new MiembroSquad('Nicole Aliste','32', 'Comida China','nicole.jpg',5);
+var clau = new MiembroSquad('Claudia Rivera','33', 'Patinar', 'clau.png',6);
+var fran = new MiembroSquad('Francisca Ruiz-Tagle','35', 'Manualidades', 'fran.png',7);
+
+
 
 var objeto = [bere, su, dani, rata, nico, clau, fran];
 var impre2 = document.getElementById('list');
@@ -29,10 +27,24 @@ var impre = objeto.forEach(function(elemento){
 
 });
 
+// Códigos para los comentarios - Cueck!
+/*
 
-// Códigos para los comentarios
+var cajaDeComentarios = document.getElementById('incorporardatos');
+var comentariosInput = [];
 
-/* Intento fallido u.u
+class Comentario {
+  constructor(id_miembro,comentario,likes) {
+    this.id_miembro = id_miembro;
+    this.comentario = comentario;
+    this.likes = 0;
+  }
+
+  for (var i = 0; i < objeto[i].length; i++) {
+      impre2 += '<li>' + objeto[i] + '</li>';
+  }
+*/
+/* Intento fallido u.u - Comentarios
 
 class Comentario {
   constructor(id_miembro,comentario,likes) {
@@ -52,8 +64,23 @@ class Comentario {
 
 var comentBere = new Comentario(document.getElementById('bereTTarea'), document.getElementsByTagName('textarea'), 0++);
 
-*/
+//Intento 2 -.-
+function MiembroSquad(nombre,edad,hobbie,imagen,comentt){
+    this.nombre = nombre;
+    this.edad = edad;
+    this.hobbie = hobbie;
+    this.imagen = imagen;
+    this.comentt = function obtenerCment(){
+    	var entrada = document.getElementById("comentarioID");
+      var textComent = document.getElementsByClassName("ComentarioEnList");
+    	textComent[0].innerHTML += input.value + "<br>";
+    	input.value = "";
+    }
 
 function comprobarComentario(){
-   var comentario = document.comentss.value;
-   var likes = document.comentss.value;}
+   var entrada = document.getElementById('coment')
+   var comentario = document.getElementsByClassName('comentlist');
+   comentario[0].innerHTML += entrada.value + "<br>";
+   entrada.value = "";
+
+   */
